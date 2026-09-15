@@ -1,25 +1,24 @@
 #SE-Git-hw Project documentation
-# Software Engineering Git & GitHub Homework (SE-Git-hw)
+GitHub Homework (SE-Git-hw)
 
 This repository contains a completed set of foundational tasks demonstrating Git version control proficiency, collaborative branch workflows, merge conflict resolutions, and issue tracking protocols aligned with professional software engineering practices.
 
-## 🚀 Workflows Implemented
+Workflows Implemented
 
-### 1. Global System Configuration
+Global System Configuration
 Establishes the developer's identity globally across the system environment.
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your.email@pvamu.edu"
 ```
 
-### 2. Isolated Feature Branching
-Features are developed inside isolated working spaces to maintain stability on the production trunk (`main`).
+Feature Branching
+Features are developed inside isolated working spaces.
 ```bash
 git checkout -b feature-1
 ```
 
-### 3. Change Propagation (Stage, Commit, Push)
-Files are tracked, bundled as snapshot checkins, and shipped to remote cloud mirrors.
+Change Propagation (Add, Commit, Push)
 ```bash
 git add .
 git commit -m "Initial commit with Hello, World! program"
@@ -28,12 +27,12 @@ git push origin main
 
 ---
 
-## 🛠️ Project Tracked Issues & Automated Resolutions
+Tracked Issues & Resolutions
 
-We utilized **GitHub Issues** to assign, manage, and execute outstanding milestone deliverables across team boundaries.
+I utilized **GitHub Issues** to assign, manage, and execute outstanding milestone deliverables across team boundaries.
 
-### 📌 Issue #1: Update README File Documentation
-* **Assignee:** Your Name (Self)
+Issue #1: Update README File Documentation
+* **Assignee:** Stephanie Redd
 * **Description:** Create structural workspace documentation explaining core workflows, file listings, and error resolutions for upcoming software iterations.
 * **Resolution Method:** Resolved via terminal automation. By linking a targeted keyword into the commit string, the issue closed out automatically upon code push.
 * **Command Executed:**
@@ -43,7 +42,7 @@ We utilized **GitHub Issues** to assign, manage, and execute outstanding milesto
   git push origin main
   ```
 
-### 📌 Issue #2: Add Code Comments to apple.py
+Issue #2: Add Code Comments to apple.py
 * **Assignee:** Classmate Collaborator
 * **Description:** Refactor the `apple.py` application file to include comprehensive code inline comments explaining the execution pathway.
 * **Resolution Method:** Resolved via collaborative branch cross-push or remote integration utilizing the explicit closing keyword hook.
@@ -55,10 +54,10 @@ We utilized **GitHub Issues** to assign, manage, and execute outstanding milesto
 
 ---
 
-## ⚠️ Troubleshooting Log & Resolved Blocks
+Troubleshooting
 
-### 🛑 Symptom: `error: Empty commit message.`
-During a manual merge operation conflict resolution (`git merge branch-B`), the default text editor interface (Vim or GNU nano) was exited cleanly but with an empty commit text header buffer. This threw an error, halting completion and trapping the console inside a structural pending merge loop:
+Error: `error: Empty commit message.`
+During a manual merge operation conflict resolution (`git merge branch-B`), the default text editor interface was exited cleanly but with an empty commit text header buffer. This threw an error, halting completion and trapping the console inside a structural pending merge loop:
 ```text
 sredd@DESKTOP-0BUDNNK MINGW64 ~/SE-Git-hw (main|MERGING)
 \$ git merge branch-B
@@ -66,7 +65,7 @@ error: Empty commit message.
 Not committing merge; use 'git commit' to complete the merge.
 ```
 
-#### ✅ System Resolution:
+Resolution:
 Because the tracking files were already scrubbed of conflict flags (`<<<<<<<`, `=======`, `>>>>>>>`), the state simply needed a manual commit flag designation to anchor the merge state and drop out of the `(main|MERGING)` status back into regular tracking:
 ```bash
 git commit -m "Merge branch-B and resolve conflicts"
