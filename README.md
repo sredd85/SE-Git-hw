@@ -8,8 +8,8 @@ Workflows Implemented
 Global System Configuration
 Establishes the developer's identity globally across the system environment.
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@pvamu.edu"
+git config --global user.name "Stephanie Redd"
+git config --global user.email "srredd@pvamu.edu"
 ```
 
 Feature Branching
@@ -33,8 +33,8 @@ I utilized **GitHub Issues** to assign, manage, and execute outstanding mileston
 
 Issue #1: Update README File Documentation
 * **Assignee:** Stephanie Redd
-* **Description:** Create structural workspace documentation explaining core workflows, file listings, and error resolutions for upcoming software iterations.
-* **Resolution Method:** Resolved via terminal automation. By linking a targeted keyword into the commit string, the issue closed out automatically upon code push.
+* **Description:** Create structural workspace documentation explaining core workflows.
+* **Resolution Method:** Resolved via terminal automation. 
 * **Command Executed:**
   ```bash
   git add README.md
@@ -44,8 +44,8 @@ Issue #1: Update README File Documentation
 
 Issue #2: Add Code Comments to apple.py
 * **Assignee:** Classmate Collaborator
-* **Description:** Refactor the `apple.py` application file to include comprehensive code inline comments explaining the execution pathway.
-* **Resolution Method:** Resolved via collaborative branch cross-push or remote integration utilizing the explicit closing keyword hook.
+* **Description:** Comment on the `apple.py` application file with comments explaining the execution.
+* **Resolution Method:** Resolved via collaborative branch cross-push.
 * **Command Executed:**
   ```bash
   git commit -am "Add descriptive code comments, Fixes #2"
